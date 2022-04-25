@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/17e8d41579.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="text-3xl text-black">Currency Converter 💵💶</h1>
+
+        <div class="container">
+            <div>
+                <label for="amout" class="text-gray"><strong>Amount:</strong></label>
+                <input type="text" class="amount" id="amount" placeholder="Enter the amount" value="" required>
+            </div>
+
+            <div>
+                <label for="from" class="text-gray"><strong>From:</strong></label>
+                <select name="from" id="from" class="select text-gray">
+                    <option value="">Please choose a currency</option>
+                    <option value="USD">USD - US Dollar</option>
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="HKD">HKD - Hong Kong Dollar</option>
+                    <option value="GBP">GBP - British Pound</option>
+                    <option value="JPY">JPY - Japanese Yen</option>
+                    <option value="RMB">RMB - Chinese Yuan</option>
+                    <option value="ISK">ISK - Icelandic Krona</option>
+                </select>
+            </div>
+
+            <button id="reverseBtn"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+
+            <div>
+                <label for="to" class="text-gray"><strong>To:</strong></label>
+                <select name="to" id="to" class="select text-gray">
+                    <option value="">Please choose a currency</option>
+                    <option value="USD">USD - US Dollar</option>
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="HKD">HKD - Hong Kong Dollar</option>
+                    <option value="GBP">GBP - British Pound</option>
+                    <option value="JPY">JPY - Japanese Yen</option>
+                    <option value="RMB">RMB - Chinese Yuan</option>
+                    <option value="ISK">ISK - Icelandic Krona</option>
+                </select>
+            </div>
+            <button id="convert">Convert</button>
+        </div>
+
+        <div class="result">
+
+        </div>
+
+        <span class="time"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
